@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/ar_search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/search_hint"
+        />
+
+    <TextView
+        android:id="@+id/ar_empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="@string/main_repositories_empty"
+        android:textSize="20sp"
+        android:layout_weight="1" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/ar_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/ar_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/main_repositories_loading" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ar_loading_text"
+            android:layout_alignRight="@+id/ar_loading_text"
+            android:layout_below="@+id/ar_loading_text"
+            android:indeterminateOnly="true" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/ar_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:weightSum="1"
+        android:layout_weight="10"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ar_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
