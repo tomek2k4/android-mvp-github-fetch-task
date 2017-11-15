@@ -9,7 +9,7 @@ ext {
 
     //Android
     androidBuildToolsVersion = "26.0.2"
-    androidMinSdkVersion = 15
+    androidMinSdkVersion = 21
     androidTargetSdkVersion = 26
     androidCompileSdkVersion = 26
 
@@ -27,16 +27,17 @@ ext {
 
     mobileUiDependencies = [
 
-            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
-            dagger:             "com.google.dagger:dagger:${daggerVersion}",
-            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}",
-            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
-            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
-            androidAnnotations: "com.android.support:support-annotations:${supportLibraryVersion}",
-            appCompatV7:        "com.android.support:appcompat-v7:${supportLibraryVersion}",
-            daggerSupport:      "com.google.dagger:dagger-android-support:${daggerVersion}",
-            daggerProcessor:    "com.google.dagger:dagger-android-processor:${daggerVersion}",
-            glassfishAnnotation: "org.glassfish:javax.annotation:${glassfishAnnotationVersion}"
+            daggerCompiler:      "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:              "com.google.dagger:dagger:${daggerVersion}",
+            kotlin:              "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}",
+            javaxAnnotation:     "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:         "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations:  "com.android.support:support-annotations:${supportLibraryVersion}",
+            appCompatV7:         "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            daggerSupport:       "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerProcessor:     "com.google.dagger:dagger-android-processor:${daggerVersion}",
+            glassfishAnnotation: "org.glassfish:javax.annotation:${glassfishAnnotationVersion}",
+            design:              "com.android.support:design:${supportLibraryVersion}"
 
     ]
 

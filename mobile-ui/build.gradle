@@ -72,6 +72,7 @@ dependencies {
     implementation mobileUiDependencies.appCompatV7
     implementation mobileUiDependencies.dagger
     implementation mobileUiDependencies.daggerSupport
+    implementation mobileUiDependencies.design
 
     testImplementation mobileUiTestDependencies.kotlinJUnit
 
