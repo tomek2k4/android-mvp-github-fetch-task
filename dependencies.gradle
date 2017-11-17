@@ -20,6 +20,11 @@ ext {
     javaxAnnotationVersion = '1.0'
     javaxInjectVersion = '1'
     supportLibraryVersion = '26.0.1'
+    rxJavaVersion = '2.0.2'
+    rxKotlinVersion = '2.1.0'
+    rxAndroidVersion = '2.0.1'
+    androidAnnotationsVersion = '21.0.3'
+    retrofitVersion = '2.3.0'
 
     //Testing
     jUnitVersion = '4.12'
@@ -46,5 +51,20 @@ ext {
             kotlinJUnit:        "org.jetbrains.kotlin:kotlin-test-junit:${kotlin_version}"
 
     ]
+
+    presentationDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}",
+            rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            retrofit:           "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter:  "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter:    "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    ]
+
 }
 

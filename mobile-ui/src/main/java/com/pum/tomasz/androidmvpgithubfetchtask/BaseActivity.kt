@@ -2,7 +2,6 @@ package com.pum.tomasz.androidmvpgithubfetchtask
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.appcompat.R.id.add
 import com.pum.tomasz.androidmvpgithubfetchtask.framework.extensions.inTransaction
 import kotlinx.android.synthetic.main.toolbar.*
 

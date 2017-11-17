@@ -7,13 +7,6 @@ import com.pum.tomasz.androidmvpgithubfetchtask.di.component.DaggerApplicationCo
 class AndroidApplication: Application() {
 
     val applicationComponent: ApplicationComponent by lazy(mode = LazyThreadSafetyMode.NONE) {
-        DaggerApplicationComponent.create()
+        DaggerApplicationComponent.builder().application(this).build()
     }
-
-    override fun onCreate() {
-        super.onCreate()
-        injectMembers()
-    }
-
-    private fun injectMembers() = applicationComponent.inject(this)
 }

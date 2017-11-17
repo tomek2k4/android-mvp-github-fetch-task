@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 class RouteActivity: AppCompatActivity() {
 
-    val appComponent:ApplicationComponent by lazy(mode = LazyThreadSafetyMode.NONE) {
+    private val appComponent:ApplicationComponent by lazy(mode = LazyThreadSafetyMode.NONE) {
         (application as AndroidApplication).applicationComponent
     }
 
