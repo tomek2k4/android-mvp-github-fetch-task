@@ -75,6 +75,7 @@ dependencies {
     implementation mobileUiDependencies.dagger
     implementation mobileUiDependencies.daggerSupport
     implementation mobileUiDependencies.design
+    implementation mobileUiDependencies.cardView
 
     testImplementation mobileUiTestDependencies.kotlinJUnit
 

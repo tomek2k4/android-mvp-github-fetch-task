@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import com.pum.tomasz.androidmvpgithubfetchtask.framework.extensions.inTransaction
 import kotlinx.android.synthetic.main.toolbar.*
 
-abstract class BaseActivity: AppCompatActivity() {
+abstract class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,9 +20,9 @@ abstract class BaseActivity: AppCompatActivity() {
     }
 
     private fun addFragment(savedInstanceState: Bundle?) =
-    savedInstanceState ?: supportFragmentManager.inTransaction {
-        add(R.id.fragmentContainer, fragment())
-    }
+            savedInstanceState ?: supportFragmentManager.inTransaction {
+                add(R.id.fragmentContainer, fragment())
+            }
 
     abstract fun fragment(): BaseFragment
 
